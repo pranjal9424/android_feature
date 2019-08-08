@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+
+    android:paddingRight="25dp"
+    android:paddingTop="25dp"
+    android:paddingLeft="25dp"
+    tools:context=".MainActivity"
+
+    >
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/l1"
+    app:cardCornerRadius="20dp"
+    android:layout_marginTop="90dp"
+    android:layout_marginBottom="150dp"
+    app:cardBackgroundColor="#5B5774BD">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:hint="email or phone"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/email_phone"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="20dp"
+        android:hint="password or otp"
+        android:paddingLeft="20dp"
+        android:inputType="textPassword"
+        android:paddingRight="20dp"
+        android:id="@+id/pass_otp"
+        android:background="@drawable/email"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/btn"
+        android:hint="Login"/>
+</androidx.cardview.widget.CardView>
+
+
+<!--
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/lightorange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="36,520"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="CLIENT SUBSCRIBE
+        RIGHT NOW"
+            android:textColor="@color/lightorangedark"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:background="@drawable/rocket"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/buttonsp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBSCRIBE NOW"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"/>
+
+    </LinearLayout>-->
+
+</LinearLayout>
