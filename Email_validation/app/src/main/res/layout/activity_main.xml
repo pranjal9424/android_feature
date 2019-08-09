@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="170dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="50dp"
+    android:background="@drawable/bg1"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#8a1c5ba7"
+        app:cardCornerRadius="20dp"
+
+
+
+        >
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/logibback"
+            android:ems="10"
+            android:id="@+id/emailtext"
+            android:hint="email"
+            android:drawableLeft="@drawable/ic_action_login"
+            android:inputType="textEmailAddress"
+            android:textSize="16dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/logibback"
+            android:ems="10"
+            android:id="@+id/passtext"
+            android:hint="password"
+
+            android:drawableLeft="@drawable/ic_action_lock"
+            android:inputType="textPassword"
+            android:textSize="16dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/button3"
+            android:layout_height="40dp"
+            android:textColor="#000"
+            android:layout_marginRight="120dp"
+            android:layout_marginLeft="120dp"
+            android:text="Login"
+            android:background="@drawable/buttonback"
+            android:layout_marginTop="170dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:text="Don't have an account?"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="110dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:text="Signup"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginLeft="225dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:text="Forget your password?"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="290dp"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="110dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/pngfind"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="290dp"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="180dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/facebook"/>
+        </android.support.v7.widget.CardView>
+
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
