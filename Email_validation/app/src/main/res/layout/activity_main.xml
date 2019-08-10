@@ -11,22 +11,23 @@
     android:background="@drawable/bg1"
     tools:context=".MainActivity">
 
-    <android.support.v7.widget.CardView
+
+
+
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:cardBackgroundColor="#8a1c5ba7"
         app:cardCornerRadius="20dp"
-
-
-
         >
 
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:layout_marginTop="50dp"
-            android:background="@drawable/logibback"
+            android:background="@drawable/button"
             android:ems="10"
             android:id="@+id/emailtext"
             android:hint="email"
@@ -35,12 +36,17 @@
             android:textSize="16dp"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
             />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="110dp"
-            android:background="@drawable/logibback"
+            android:background="@drawable/button"
             android:ems="10"
             android:id="@+id/passtext"
             android:hint="password"
@@ -50,51 +56,61 @@
             android:textSize="16dp"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="7dp"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
             />
 
         <Button
             android:layout_width="match_parent"
-            android:id="@+id/button3"
             android:layout_height="40dp"
-            android:textColor="#000"
-            android:layout_marginRight="120dp"
-            android:layout_marginLeft="120dp"
+            android:id="@+id/button3"
+            android:textColor="@color/colorPrimary"
             android:text="Login"
-            android:background="@drawable/buttonback"
-            android:layout_marginTop="170dp"/>
+            android:background="@drawable/login"
+            android:layout_marginTop="170dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            />
 
         <TextView
+            android:id="@+id/account"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="230dp"
             android:text="Don't have an account?"
-            android:layout_marginLeft="80dp"
-            android:layout_marginRight="110dp"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="230dp"
-            android:text="Signup"
+            android:gravity="center"
             android:textColor="#fff"
             android:textStyle="bold"
-            android:layout_marginLeft="225dp"
+            />
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#fff"
+            android:text="Signup"
+            android:background="@drawable/button"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
 
             />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="300dp"
             android:text="Forget your password?"
             android:textColor="#fff"
             android:textStyle="bold"
             android:gravity="center"
             />
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginTop="290dp"
+            android:layout_marginTop="340dp"
             app:cardBackgroundColor="#fff"
             app:cardCornerRadius="10dp"
             android:layout_marginLeft="110dp">
@@ -103,12 +119,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/pngfind"/>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginTop="290dp"
+            android:layout_marginTop="340dp"
             app:cardBackgroundColor="#fff"
             app:cardCornerRadius="10dp"
             android:layout_marginLeft="180dp">
@@ -117,9 +133,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/facebook"/>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
 
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+
 </RelativeLayout>
