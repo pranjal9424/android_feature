@@ -4,15 +4,25 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     AHBottomNavigation bottomNavigation;
     TextView headerText;
+    Spinner mySpinner;
+    ArrayAdapter<String> adapter;
+    private int cosmicCatagory = -1;
 
 
     @Override
@@ -31,6 +41,63 @@ public class MainActivity extends AppCompatActivity {
     {
         bottomNavigation=findViewById(R.id.bottom_navigation);
         headerText=findViewById(R.id.headerLabel);
+        mySpinner=findViewById(R.id.mySpinner);
+
+        mySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(MainActivity.this,getCosmicBodies().get(i),Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+    }
+
+    private  ArrayList<String > getCosmicBodies(){
+ArrayList<String> data=new ArrayList<String >();
+data.clear();
+        switch (cosmicCatagory){
+            case  0:
+                headerText.setText("place");
+                data.add("Mirzapur");
+                data.add("varanasi");
+                data.add("prayagraj");
+                break;
+            case  1:
+                headerText.setText("Bar");
+                data.add("old mong");
+                data.add("I B");
+                data.add("B P");
+                data.add("R S");
+                break;
+            case  2:
+                headerText.setText("Menu");
+                data.add("dal fry");
+                data.add("chapati");
+                data.add("paneer");
+                data.add("snacks");
+                break;
+
+            case  3:
+                headerText.setText("Order");
+                data.add("dal fry");
+                data.add("chapati");
+
+                break;
+            default:
+                break;
+
+
+        }
+        return data;
+    }
+
+    private void dataBind(){
+adapter =new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,getCosmicBodies());
+mySpinner.setAdapter(adapter);
     }
     //create Ahbottomnavigation
     private void createnavigationitems()
@@ -62,18 +129,19 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation.setOnTabSelectedListener(new AHBottomNavigation.OnTabSelectedListener() {
             @Override
             public boolean onTabSelected(int position, boolean wasSelected) {
+                cosmicCatagory=position;
                 switch (position) {
                     case  0:
-                        headerText.setText("Place");
+                       dataBind();
                         break;
                     case 1:
-                        headerText.setText("Bar");
+                        dataBind();
                         break;
                     case 2:
-                        headerText.setText("Galaxies");
+                        dataBind();
                         break;
                     case 3:
-                        headerText.setText("Order");
+                        dataBind();
                     default:
                         break;
                 }

@@ -14,9 +14,15 @@
         android:textAllCaps="true"
         android:textStyle="bold"
         android:fontFamily="casual"
-        android:layout_alignParentTop="false"
-        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"/>
+    <Spinner
+        android:id="@+id/mySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLabel"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:padding="5dp"/>
 
     <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
         android:id="@+id/bottom_navigation"
