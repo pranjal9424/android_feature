@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AHBottomNavigation</string>
+    <string name="tab1">Place</string>
+    <string name="tab2">Stars</string>
+    <string name="tab3">Galaxies</string>
+    <string name="tab4">order</string>
+</resources>
