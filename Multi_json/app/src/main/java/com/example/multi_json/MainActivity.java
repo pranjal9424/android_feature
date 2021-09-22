@@ -31,8 +31,6 @@ public class MainActivity extends ListActivity {
     private static final String TAG_PHONE = "phone";
     private static final String TAG_PHONE_MOBILE = "mobile";
     private static final String TAG_PHONE_HOME = "home";
-    private static final String TAG_PHONE_OFFICE = "office";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,8 +87,8 @@ public class MainActivity extends ListActivity {
             ListAdapter adapter = new SimpleAdapter(
                     MainActivity.this, studentList,
                     R.layout.list_item, new String[]{TAG_NAME, TAG_EMAIL,TAG_ADDRESS,TAG_GENDER,
-                    TAG_PHONE_MOBILE,TAG_PHONE_HOME,TAG_PHONE_OFFICE}, new int[]{R.id.name,
-                    R.id.email,R.id.address,R.id.gender, R.id.mobile,R.id.home,R.id.office});
+                    TAG_PHONE_MOBILE,TAG_PHONE_HOME}, new int[]{R.id.name,
+                    R.id.email,R.id.address,R.id.gender, R.id.mobile,R.id.home});
 
             setListAdapter(adapter);
         }
@@ -122,8 +120,6 @@ public class MainActivity extends ListActivity {
                     JSONObject phone = c.getJSONObject(TAG_PHONE);
                     String mobile = phone.getString(TAG_PHONE_MOBILE);
                     String home = phone.getString(TAG_PHONE_HOME);
-                    String office = phone.getString(TAG_PHONE_OFFICE);
-
                     // tmp hashmap for single student
                     HashMap<String, String> student = new HashMap<String, String>();
 
@@ -133,7 +129,6 @@ public class MainActivity extends ListActivity {
                     student.put(TAG_EMAIL, email);
                     student.put(TAG_PHONE_MOBILE, mobile);
                     student.put(TAG_PHONE_HOME, home);
-                    student.put(TAG_PHONE_OFFICE, office);
                     student.put(TAG_ADDRESS, address);
                     student.put(TAG_GENDER, gender);
 

@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:fadeScrollbars="true">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/family"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="35dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/family"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Family Stories"
+                    android:textColor="#fff"
+                    android:gravity="bottom"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="8dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/aladin"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                app:cardCornerRadius="8dp"
+                android:layout_below="@+id/family">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/aladin"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Aladin Stories"
+                    android:textColor="#fff"
+                    android:gravity="bottom"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="8dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/animal"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                app:cardCornerRadius="8dp"
+                android:layout_below="@+id/aladin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/animal"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Animal Stories"
+                    android:textColor="#fff"
+                    android:gravity="bottom"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="8dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bedtime"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                app:cardCornerRadius="8dp"
+                android:layout_below="@+id/animal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bedtime"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Bedtime Stories"
+                    android:textColor="#fff"
+                    android:gravity="bottom"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="8dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/classic"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                app:cardCornerRadius="8dp"
+                android:layout_below="@+id/bedtime">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/classic"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Classic Stories"
+                    android:textColor="#000"
+                    android:gravity="bottom"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="8dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/education"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                app:cardCornerRadius="8dp"
+                android:layout_below="@+id/classic">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/education"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Education Stories"
+                    android:textColor="#000"
+                    android:gravity="bottom"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="8dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/english"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                app:cardCornerRadius="8dp"
+                android:layout_below="@+id/education">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/english"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="English"
+                    android:textColor="#fff"
+                    android:gravity="bottom"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="8dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/english_proverb"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                app:cardCornerRadius="8dp"
+                android:layout_below="@+id/english">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/proverb"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="English Proverb"
+                    android:textColor="#fff"
+                    android:gravity="bottom"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="8dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/akbar"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                app:cardCornerRadius="8dp"
+                android:layout_below="@+id/english_proverb">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/akbar"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Akbar Stories"
+                    android:textColor="#fff"
+                    android:gravity="bottom"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="8dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/short_stories"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                app:cardCornerRadius="8dp"
+                android:layout_below="@+id/akbar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/short_stories"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Short Stories"
+                    android:textColor="#fff"
+                    android:gravity="bottom"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="8dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/inspiration"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                app:cardCornerRadius="8dp"
+                android:layout_below="@+id/short_stories">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/inspirational"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Inspirational Stories"
+                    android:textColor="#000"
+                    android:gravity="bottom"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="8dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/kids"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                app:cardCornerRadius="8dp"
+                android:layout_below="@+id/inspiration">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/kids"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Kids Stories"
+                    android:textColor="#fff"
+                    android:gravity="bottom"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/life"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                app:cardCornerRadius="8dp"
+                android:layout_below="@+id/kids">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/arab"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Life Stories"
+                    android:textColor="#fff"
+                    android:gravity="bottom"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/long_stories"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                app:cardCornerRadius="8dp"
+                android:layout_below="@+id/life">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/arab"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Long Stories"
+                    android:textColor="#fff"
+                    android:gravity="bottom"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/moral"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                app:cardCornerRadius="8dp"
+                android:layout_below="@+id/long_stories">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/arab"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Moral Stories"
+                    android:textColor="#fff"
+                    android:gravity="bottom"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/motivation"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                app:cardCornerRadius="8dp"
+                android:layout_below="@+id/moral">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/arab"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Motivation Stories"
+                    android:textColor="#fff"
+                    android:gravity="bottom"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
