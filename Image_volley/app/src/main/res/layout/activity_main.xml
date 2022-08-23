@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        android:hint="Enter Your Name"
+        android:id="@+id/t1"
+        android:textColor="#000"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        android:hint="Enter Your Designation"
+        android:id="@+id/t2"
+        android:textColor="#000"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="80dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_launcher_foreground" />
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Browse Image"
+        android:id="@+id/browse"/>
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Upload to Server"
+        android:textColor="#FFF"
+        android:background="@color/purple_200"
+        android:layout_marginTop="10dp"
+        android:id="@+id/upload"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
